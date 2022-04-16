@@ -127,6 +127,7 @@ a {
   body {
     display: flex;
     flex-direction: column;
+    height: 100%;
   }
 
   .img-area {
