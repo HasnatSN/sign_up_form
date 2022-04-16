@@ -115,7 +115,7 @@ button:hover {
 }
 
 .last-p {
-    padding: 0 0 2rem 3rem;
+  padding: 0 0 2rem 3rem;
 }
 
 a {
@@ -135,8 +135,9 @@ a {
   }
 
   .space-img {
-      height: 100vh;
-
+    height: 100vh;
+    top: -500px;
+    left: -100px;
   }
 
   .credits {
@@ -149,18 +150,18 @@ a {
   }
 
   .header-text {
-      padding-bottom: 2rem;
+    padding-bottom: 2rem;
   }
 
   .text-area {
-      padding: 2rem 0 2rem;
+    padding: 2rem 0 2rem;
   }
 
   .inputs {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .last-p {
-      padding-bottom: 2rem
-  };
+    padding-bottom: 2rem;
+  }
 }
