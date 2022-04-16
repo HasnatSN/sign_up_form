@@ -1,14 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="script.js"></script>
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <title>Sign-up-form</title>
+  </head>
+  <body>
+    <div class="img-area">
+      <img class="space-img" src="img/space.jpg" alt="space" />
+      <div class="header-area">
+        <img class="logo-img" src="img/logo.png" alt="logo" srcset="" />
+        <h1>AstroClub</h1>
+      </div>
+      <div class="credits">
+        Photo by
+        <a
+          href="https://unsplash.com/@aldebarans?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Aldebaran S</a
+        >
+        on
+        <a
+          href="https://unsplash.com/s/photos/space?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Unsplash</a
+        >
+        <br />
+        Copyright © 2022 HSN
+      </div>
+    </div>
+
+    <div class="text-area">
+      <div class="header-text">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate
+          sapiente nisi quod, reprehenderit vitae nobis dolore iste in, vel,
+          exercitationem pariatur corrupti assumenda ad. Aliquid, obcaecati.
+          Deserunt nemo voluptatibus.<br />
+          <br />
+          <span>Completely for free.</span> 
+        </p>
+      </div>
+
+      <form action="script.js" id="user-data" method="post">
+        <div class="gray-middle-area">
+          <p>Subscribe now!</p>
+          <div class="inputs">
+            <div>
+              <label for="i_first_name">*FIRST NAME</label
+              ><input required type="text" id="i_first_name" />
+            </div>
+            <div>
+              <label for="i_last_name">*LAST NAME</label
+              ><input required type="text" id="i_last_name" />
+            </div>
+            <div>
+              <label for="i_email">*EMAIL</label
+              ><input required type="email" id="i_email" />
+            </div>
+            <div>
+              <label for="i_number">PHONE NUMBER</label
+              ><input type="tel" id="i_number" />
+            </div>
+            <div>
+              <label for="i_password">*PASSWORD</label
+              ><input required type="password" id="i_password" />
+            </div>
+            <div>
+              <label for="i_confirm_pw">*CONFIRM PASSWORD</label
+              ><input required type="password" id="i_confirm_pw"/>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit">Create Account</button>
+      </form>
+
+      <p class="last-p">
+        Already have an account? <a href="index.html">Log in</a>
+      </p>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+}
+body {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 100vh;
+}
+
+.img-area {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.space-img {
+  position: absolute;
+  height: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.header-area {
+  position: absolute;
+  top: 20%;
+  background-color: rgb(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.credits {
+  position: absolute;
+  bottom: 2%;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.credits a {
+  color: white;
+  text-decoration: underline;
+}
+
+.text-area {
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+  padding-top: 9rem;
+}
+
+.header-text {
+  color: rgb(179, 179, 179);
+  padding: 0 3rem 5rem;
+  font-size: 1.5rem;
+}
+
+span {
+  text-decoration: underline;
+  text-decoration-color: #0260b4;
+  text-decoration-thickness: 2px;
+}
+
+.gray-middle-area {
+  background-color: rgb(9, 9, 9);
+  color: rgb(161, 161, 161);
+  padding: 2rem 0 0 3rem;
+  box-shadow: 0 4px 8px -4px #0475d3;
+}
+
+.inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 2rem 3rem 2rem 0;
+}
+
+input {
+  width: 100%;
+  background-color: rgb(9, 9, 9);
+  box-shadow: none;
+  border: 1px solid rgb(61, 61, 61);
+  border-radius: 3px;
+}
+
+input:focus {
+  border: 1.5px solid #0260b4;
+  outline: none;
+}
+
+button {
+  margin: 3rem 3rem 2rem;
+  padding: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  background-color: black;
+  color: #0260b4;
+  border: 3px solid #0260b4;
+  border-radius: 0.4rem;
+}
+
+button:hover {
+  background-color: #0260b4;
+  color: black;
+}
+
+.last-p {
+    padding: 0 0 2rem 3rem;
+}
+
+a {
+  color: #0260b4;
+  text-decoration: none;
+}
+
+@media (max-width: 950px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-area {
+    height: 130px;
+  }
+
+  .space-img {
+      height: 100vh;
+
+  }
+
+  .credits {
+    visibility: hidden;
+  }
+
+  .header-area {
+    top: 0;
+    background-color: rgb(0, 0, 0, 0.7);
+  }
+
+  .header-text {
+      padding-bottom: 2rem;
+  }
+
+  .text-area {
+      padding: 2rem 0 2rem;
+  }
+
+  .inputs {
+      grid-template-columns: 1fr;
+  }
+
+  .last-p {
+      padding-bottom: 2rem
+  };
+}
